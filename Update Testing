@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                sh yum update -y
+                ssh yum update -y
             }
         }
     }
